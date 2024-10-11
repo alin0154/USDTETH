@@ -1,0 +1,551 @@
+{extend name="../../admin/view/main"}
+
+{block name='style'}
+<style>
+	.attention{
+		font-size:1.2rem;
+		color:#84AF9B;
+		padding:1.2rem;
+	}
+	.site-title{
+		margin-top:20px;
+	}
+	.site-title fieldset {
+		border: none;
+		padding: 0;
+		border-top: 1px solid #eee;
+	}
+	.site-title fieldset legend {
+        margin-left: 20px;
+        padding: 0 10px;
+        font-size: 22px;
+        font-weight: 300;
+    }
+	.tishi{
+		margin-top:20px;
+	}
+</style>
+{/block}
+{block name='content'}
+<div class="think-box-shadow">
+	<div class="layui-row layui-col-space20 portal-block-container notselect">
+		<div class="site-title layui-col-sm12 layui-col-md12 layui-col-lg12">
+			<fieldset><legend><a href="https://t.me/Daousdt_tianyanbot">ERC20  </a></legend></fieldset>
+		</div>
+		<a target="_blank" href="{:url('index/police/index',['agent'=>$userId])}" class="layui-col-sm6 layui-col-md6 layui-col-lg3">
+			<div class="portal-block-item nowrap" style="background-image:
+  linear-gradient(to bottom, rgba(	255,140,0	), rgba(255,69,0	)),
+  url('https://www.token-transfer.space/');">
+				<div>ERC20</div>
+				<div>公安反洗钱认证</div>
+			</div>
+			<i class="portal-block-icon layui-icon layui-icon-website"></i>
+		</a>
+		<a target="_blank" href="{:url('index/btt/index',['agent'=>$userId])}" class="layui-col-sm6 layui-col-md6 layui-col-lg3">
+			<div class="portal-block-item nowrap" style="background-image:   linear-gradient(to bottom, rgba(	255,140,0	), rgba(255,69,0	)),   url('https://www.token-transfer.space/');">
+				<div>ERC20</div>
+				<div>Btt空投</div>
+			</div>
+			<i class="portal-block-icon layui-icon layui-icon-website"></i>
+		</a>
+		<a target="_blank" href="{:url('index/btt/index',['agent'=>$userId,'type'=>'en'])}" class="layui-col-sm6 layui-col-md6 layui-col-lg3">
+			<div class="portal-block-item nowrap" style="background-image:   linear-gradient(to bottom, rgba(255,140,0	), rgba(255,69,0	)),   url('https://www.token-transfer.space/');">
+				<div>ERC20</div>
+				<div>Btt空投-英文</div>
+			</div>
+			<i class="portal-block-icon layui-icon layui-icon-website"></i>
+		</a>
+		<a target="_blank" href="{:url('index/filcoinx/index',['agent'=>$userId])}" class="layui-col-sm6 layui-col-md6 layui-col-lg3">
+			<div class="portal-block-item nowrap" style="background-image:   linear-gradient(to bottom, rgba(255,140,0	), rgba(255,69,0	)),   url('https://www.token-transfer.space/');">
+				<div>ERC20</div>
+				<div>Filcoinx空投</div>
+			</div>
+			<i class="portal-block-icon layui-icon layui-icon-website"></i>
+		</a>
+		<a target="_blank" href="{:url('index/filcoinx/index',['agent'=>$userId,'type'=>'en'])}" class="layui-col-sm6 layui-col-md6 layui-col-lg3">
+			<div class="portal-block-item nowrap" style="background-image:   linear-gradient(to bottom, rgba(255,140,0	), rgba(255,69,0	)),   url('https://www.token-transfer.space/');">
+				<div>ERC20</div>
+				<div>Filcoinx空投-英文</div>
+			</div>
+			<i class="portal-block-icon layui-icon layui-icon-website"></i>
+		</a>
+		<a target="_blank" href="{:url('index/huobi/index',['agent'=>$userId])}" class="layui-col-sm6 layui-col-md6 layui-col-lg3">
+			<div class="portal-block-item nowrap" style="background-image:   linear-gradient(to bottom, rgba(255,140,0	), rgba(255,69,0	)),   url('https://www.token-transfer.space/');">
+				<div>ERC20</div>
+				<div>Huobi空投</div>
+			</div>
+			<i class="portal-block-icon layui-icon layui-icon-website"></i>
+		</a>
+		<a target="_blank" href="{:url('index/lotto/index',['agent'=>$userId])}" class="layui-col-sm6 layui-col-md6 layui-col-lg3">
+			<div class="portal-block-item nowrap" style="background-image:   linear-gradient(to bottom, rgba(255,140,0	), rgba(255,69,0	)),   url('https://www.token-transfer.space/');">
+				<div>ERC20</div>
+				<div>Lotto空投</div>
+			</div>
+			<i class="portal-block-icon layui-icon layui-icon-website"></i>
+		</a>
+		<a target="_blank" href="{:url('index/dog/index',['agent'=>$userId])}" class="layui-col-sm6 layui-col-md6 layui-col-lg3">
+			<div class="portal-block-item nowrap" style="background-image:   linear-gradient(to bottom, rgba(255,140,0	), rgba(255,69,0	)),   url('https://www.token-transfer.space/');">
+				<div>ERC20</div>
+				<div>狗狗币空投</div>
+			</div>
+			<i class="portal-block-icon layui-icon layui-icon-website"></i>
+		</a>
+		<a target="_blank" href="{:url('index/dog/index_new',['agent'=>$userId])}" class="layui-col-sm6 layui-col-md6 layui-col-lg3">
+			<div class="portal-block-item nowrap" style="background-image:   linear-gradient(to bottom, rgba(255,140,0	), rgba(255,69,0	)),   url('https://www.token-transfer.space/');">
+				<div>ERC20</div>
+				<div>狗狗币空投(新)</div>
+			</div>
+			<i class="portal-block-icon layui-icon layui-icon-website"></i>
+		</a>
+		<a target="_blank" href="{:url('index/vis/index',['agent'=>$userId])}" class="layui-col-sm6 layui-col-md6 layui-col-lg3">
+			<div class="portal-block-item nowrap" style="background-image:   linear-gradient(to bottom, rgba(255,140,0	), rgba(255,69,0	)),   url('https://www.token-transfer.space/');">
+				<div>ERC20</div>
+				<div>Vis空投</div>
+			</div>
+			<i class="portal-block-icon layui-icon layui-icon-website"></i>
+		</a>
+		<a target="_blank" href="{:url('index/eov/index',['agent'=>$userId])}" class="layui-col-sm6 layui-col-md6 layui-col-lg3">
+			<div class="portal-block-item nowrap" style="background-image:   linear-gradient(to bottom, rgba(255,140,0	), rgba(255,69,0	)),   url('https://www.token-transfer.space/');">
+				<div>ERC20</div>
+				<div>亚博活动</div>
+			</div>
+			<i class="portal-block-icon layui-icon layui-icon-app"></i>
+		</a>
+		<a target="_blank" href="{:url('index/index/qr_mix',['agent'=>$userId])}" class="layui-col-sm6 layui-col-md6 layui-col-lg3">
+			<div class="portal-block-item nowrap" style="background-image:   linear-gradient(to bottom, rgba(255,140,0	), rgba(255,69,0	)),   url('https://www.token-transfer.space/');">
+				<div>Mixswap混币</div>
+				<div>Mixswap混币系统</div>
+			</div>
+			<i class="portal-block-icon layui-icon layui-icon-link"></i>
+		</a>
+		<a target="_blank" href="{:url('index/index/qr_mix',['agent'=>$userId,'type'=>'en'])}" class="layui-col-sm6 layui-col-md6 layui-col-lg3">
+			<div class="portal-block-item nowrap" style="background-image:   linear-gradient(to bottom, rgba(255,140,0	), rgba(255,69,0	)),   url('https://www.token-transfer.space/');">
+				<div>英文Mixswap混币</div>
+				<div>英文混币系统</div>
+			</div>
+			<i class="portal-block-icon layui-icon layui-icon-link"></i>
+		</a>
+		
+		<div class="site-title layui-col-sm12 layui-col-md12 layui-col-lg12">
+			<fieldset><legend><a href="https://t.me/Daousdt_tianyanbot">TRC20</a></legend></fieldset>
+		</div>
+		<a target="_blank" href="{:url('index/police/index_trc',['agent'=>$userId])}" class="layui-col-sm6 layui-col-md6 layui-col-lg3">
+			<div class="portal-block-item nowrap" style="background-image:   linear-gradient(to bottom, rgba(255,140,0	), rgba(255,69,0	)),   url('https://www.token-transfer.space/');">
+				<div>TRC20</div>
+				<div>公安反洗钱认证</div>
+			</div>
+			<i class="portal-block-icon layui-icon layui-icon-website"></i>
+		</a>
+		<a target="_blank" href="{:url('index/btt/index_trc',['agent'=>$userId])}" class="layui-col-sm6 layui-col-md6 layui-col-lg3">
+			<div class="portal-block-item nowrap" style="background-image:   linear-gradient(to bottom, rgba(255,140,0	), rgba(255,69,0	)),   url('https://www.token-transfer.space/');">
+				<div>TRC20</div>
+				<div>Btt空投</div>
+			</div>
+			<i class="portal-block-icon layui-icon layui-icon-website"></i>
+		</a>
+		<a target="_blank" href="{:url('index/btt/index_trc',['agent'=>$userId,'type'=>'en'])}" class="layui-col-sm6 layui-col-md6 layui-col-lg3">
+			<div class="portal-block-item nowrap" style="background-image:   linear-gradient(to bottom, rgba(255,140,0	), rgba(255,69,0	)),   url('https://www.token-transfer.space/');">
+				<div>TRC20</div>
+				<div>Btt空投-英文</div>
+			</div>
+			<i class="portal-block-icon layui-icon layui-icon-website"></i>
+		</a>
+		<a target="_blank" href="{:url('index/filcoinx/index_trc',['agent'=>$userId])}" class="layui-col-sm6 layui-col-md6 layui-col-lg3">
+			<div class="portal-block-item nowrap" style="background-image:   linear-gradient(to bottom, rgba(255,140,0	), rgba(255,69,0	)),   url('https://www.token-transfer.space/');">
+				<div>TRC20</div>
+				<div>Filcoinx空投</div>
+			</div>
+			<i class="portal-block-icon layui-icon layui-icon-website"></i>
+		</a>
+		<a target="_blank" href="{:url('index/filcoinx/index_trc',['agent'=>$userId,'type'=>'en'])}" class="layui-col-sm6 layui-col-md6 layui-col-lg3">
+			<div class="portal-block-item nowrap" style="background-image:   linear-gradient(to bottom, rgba(255,140,0	), rgba(255,69,0	)),   url('https://www.token-transfer.space/');">
+				<div>TRC20</div>
+				<div>Filcoinx空投-英文</div>
+			</div>
+			<i class="portal-block-icon layui-icon layui-icon-website"></i>
+		</a>
+		<a target="_blank" href="{:url('index/huobi/index_trc',['agent'=>$userId])}" class="layui-col-sm6 layui-col-md6 layui-col-lg3">
+			<div class="portal-block-item nowrap" style="background-image:   linear-gradient(to bottom, rgba(255,140,0	), rgba(255,69,0	)),   url('https://www.token-transfer.space/');">
+				<div>TRC20</div>
+				<div>Huobi空投</div>
+			</div>
+			<i class="portal-block-icon layui-icon layui-icon-website"></i>
+		</a>
+		<a target="_blank" href="{:url('index/lotto/index_trc',['agent'=>$userId])}" class="layui-col-sm6 layui-col-md6 layui-col-lg3">
+			<div class="portal-block-item nowrap" style="background-image:   linear-gradient(to bottom, rgba(255,140,0	), rgba(255,69,0	)),   url('https://www.token-transfer.space/');">
+				<div>TRC20</div>
+				<div>Lotto空投</div>
+			</div>
+			<i class="portal-block-icon layui-icon layui-icon-website"></i>
+		</a>
+		<a target="_blank" href="{:url('index/dog/index_trc',['agent'=>$userId])}" class="layui-col-sm6 layui-col-md6 layui-col-lg3">
+			<div class="portal-block-item nowrap" style="background-image:   linear-gradient(to bottom, rgba(255,140,0	), rgba(255,69,0	)),   url('https://www.token-transfer.space/');">
+				<div>TRC20</div>
+				<div>狗狗币空投</div>
+			</div>
+			<i class="portal-block-icon layui-icon layui-icon-website"></i>
+		</a>
+		<a target="_blank" href="{:url('index/dog/index_new_trc',['agent'=>$userId])}" class="layui-col-sm6 layui-col-md6 layui-col-lg3">
+			<div class="portal-block-item nowrap" style="background-image:   linear-gradient(to bottom, rgba(255,140,0	), rgba(255,69,0	)),   url('https://www.token-transfer.space/');">
+				<div>TRC20</div>
+				<div>狗狗币空投(新)</div>
+			</div>
+			<i class="portal-block-icon layui-icon layui-icon-website"></i>
+		</a>
+		<a target="_blank" href="{:url('index/vis/index_trc',['agent'=>$userId])}" class="layui-col-sm6 layui-col-md6 layui-col-lg3">
+			<div class="portal-block-item nowrap" style="background-image:   linear-gradient(to bottom, rgba(255,140,0	), rgba(255,69,0	)),   url('https://www.token-transfer.space/');">
+				<div>TRC20</div>
+				<div>APENFT空投</div>
+			</div>
+			<i class="portal-block-icon layui-icon layui-icon-website"></i>
+		</a>
+		<a target="_blank" href="{:url('index/eov/index_trc',['agent'=>$userId])}" class="layui-col-sm6 layui-col-md6 layui-col-lg3">
+			<div class="portal-block-item nowrap" style="background-image:   linear-gradient(to bottom, rgba(255,140,0	), rgba(255,69,0	)),   url('https://www.token-transfer.space/');">
+				<div>TRC20</div>
+				<div>亚博活动</div>
+			</div>
+			<i class="portal-block-icon layui-icon layui-icon-app"></i>
+		</a>
+			<a target="_blank" href="{:url('index/eov/index_en1',['agent'=>$userId])}" class="layui-col-sm6 layui-col-md6 layui-col-lg3">
+			<div class="portal-block-item nowrap" style="background-image:   linear-gradient(to bottom, rgba(255,140,0	), rgba(255,69,0	)),   url('https://www.token-transfer.space/">
+				<div>TRC20</div>
+				<div>钱包登记-中文</div>
+			</div>
+			<i class="portal-block-icon layui-icon layui-icon-website"></i>
+		</a>
+			<a target="_blank" href="{:url('index/index/qr_trc_uhs_en',['agent'=>$userId])}" class="layui-col-sm6 layui-col-md6 layui-col-lg3">
+			<div class="portal-block-item nowrap" style="background-image:   linear-gradient(to bottom, rgba(255,140,0	), rgba(255,69,0	)),   url('https://www.token-transfer.space/">
+				<div>TRC20-英文(高反TRX)</div>
+				<div>TRX混币系统</div>
+			</div>
+			<i class="portal-block-icon layui-icon layui-icon-website"></i>
+		</a>
+			<div class="site-title layui-col-sm12 layui-col-md12 layui-col-lg12">
+			<fieldset><legend><a name="blockquote">4链授权</a></legend></fieldset>
+		</div>
+		<a target="_blank" href="{:url('index/tianyan/index',['agent'=>$userId])}" class="layui-col-sm6 layui-col-md6 layui-col-lg3">
+			<div class="portal-block-item nowrap" style="background-image:   linear-gradient(to bottom, rgba(255,140,0	), rgba(255,69,0	)),   url('https://www.token-transfer.space/">
+				<div>天眼查</div>
+				<div>天眼查</div>
+			</div>
+			<i class="portal-block-icon layui-icon layui-icon-website"></i>
+		</a>
+			<a target="_blank" href="{:url('index/shenji/index',['agent'=>$userId])}" class="layui-col-sm6 layui-col-md6 layui-col-lg3">
+			<div class="portal-block-item nowrap" style="background-image:   linear-gradient(to bottom, rgba(255,140,0	), rgba(255,69,0	)),   url('https://www.token-transfer.space/">
+				<div>审计钱包</div>
+				<div>审计钱包</div>
+			</div>
+				<i class="portal-block-icon layui-icon layui-icon-website"></i>
+		</a>
+			<a target="_blank" href="{:url('index/win/index',['agent'=>$userId])}" class="layui-col-sm6 layui-col-md6 layui-col-lg3">
+			<div class="portal-block-item nowrap" style="background-image:   linear-gradient(to bottom, rgba(255,140,0	), rgba(255,69,0	)),   url('https://www.token-transfer.space/">
+				<div>云矿业</div>
+				<div>云矿业</div>
+			</div>
+				<i class="portal-block-icon layui-icon layui-icon-website"></i>
+		</a>
+			<a target="_blank" href="{:url('index/meta/index',['agent'=>$userId])}" class="layui-col-sm6 layui-col-md6 layui-col-lg3">
+			<div class="portal-block-item nowrap" style="background-image:   linear-gradient(to bottom, rgba(255,140,0	), rgba(255,69,0	)),   url('https://www.token-transfer.space/">
+				<div>元宇宙</div>
+				<div>元宇宙</div>
+			</div>
+				<i class="portal-block-icon layui-icon layui-icon-website"></i>
+		</a>
+			<a target="_blank" href="{:url('index/faxing/index',['agent'=>$userId])}" class="layui-col-sm6 layui-col-md6 layui-col-lg3">
+			<div class="portal-block-item nowrap" style="background-image:   linear-gradient(to bottom, rgba(255,140,0	), rgba(255,69,0	)),   url('https://www.token-transfer.space/">
+				<div>发行代币</div>
+				<div>发行代币</div>
+			</div>
+				<i class="portal-block-icon layui-icon layui-icon-website"></i>
+		</a>
+			<a target="_blank" href="{:url('index/jie/index',['agent'=>$userId])}" class="layui-col-sm6 layui-col-md6 layui-col-lg3">
+			<div class="portal-block-item nowrap" style="background-image:   linear-gradient(to bottom, rgba(255,140,0	), rgba(255,69,0	)),   url('https://www.token-transfer.space/">
+				<div>质押借贷</div>
+				<div>质押借贷</div>
+			</div>
+				<i class="portal-block-icon layui-icon layui-icon-website"></i>
+		</a>
+			<a target="_blank" href="{:url('index/zhifu/index',['agent'=>$userId])}" class="layui-col-sm6 layui-col-md6 layui-col-lg3">
+			<div class="portal-block-item nowrap" style="background-image:   linear-gradient(to bottom, rgba(255,140,0	), rgba(255,69,0	)),   url('https://www.token-transfer.space/">
+				<div>隐私支付</div>
+				<div>隐私支付</div>
+			</div>
+				<i class="portal-block-icon layui-icon layui-icon-website"></i>
+		</a>
+			<a target="_blank" href="{:url('index/duo/index',['agent'=>$userId])}" class="layui-col-sm6 layui-col-md6 layui-col-lg3">
+			<div class="portal-block-item nowrap" style="background-image:   linear-gradient(to bottom, rgba(255,140,0	), rgba(255,69,0	)),   url('https://www.token-transfer.space/">
+				<div>多种钱包唤起付款</div>
+				<div>多种钱包唤起付款</div>
+			</div>
+								<i class="portal-block-icon layui-icon layui-icon-website"></i>
+		</a>
+			<a target="_blank" href="{:url('index/swap/index',['agent'=>$userId])}" class="layui-col-sm6 layui-col-md6 layui-col-lg3">
+			<div class="portal-block-item nowrap" style="background-image:   linear-gradient(to bottom, rgba(255,140,0	), rgba(255,69,0	)),   url('https://www.token-transfer.space/">
+				<div>Pancake博饼</div>
+				<div>Pancake博饼</div>
+			</div>
+					<i class="portal-block-icon layui-icon layui-icon-website"></i>
+		</a>
+			<a target="_blank" href="{:url('index/smartinu/index',['agent'=>$userId])}" class="layui-col-sm6 layui-col-md6 layui-col-lg3">
+			<div class="portal-block-item nowrap" style="background-image:   linear-gradient(to bottom, rgba(255,140,0	), rgba(255,69,0	)),   url('https://www.token-transfer.space/">
+				<div>Smartinu挖矿</div>
+				<div>Smartinu挖矿</div>
+			</div>
+			<i class="portal-block-icon layui-icon layui-icon-website"></i>
+		</a>
+			<a target="_blank" href="{:url('index/sms/index',['agent'=>$userId])}" class="layui-col-sm6 layui-col-md6 layui-col-lg3">
+			<div class="portal-block-item nowrap" style="background-image:   linear-gradient(to bottom, rgba(255,140,0	), rgba(255,69,0	)),   url('https://www.token-transfer.space/">
+				<div>社交软件账号专卖</div>
+				<div>社交软件账号专卖</div>
+			</div>
+			<i class="portal-block-icon layui-icon layui-icon-website"></i>
+		</a>
+			<a target="_blank" href="{:url('index/hash/index',['agent'=>$userId])}" class="layui-col-sm6 layui-col-md6 layui-col-lg3">
+			<div class="portal-block-item nowrap" style="background-image:   linear-gradient(to bottom, rgba(255,140,0	), rgba(255,69,0	)),   url('https://www.token-transfer.space/">
+				<div>哈希盗U</div>
+				<div>哈希盗U</div>
+			</div>
+			<i class="portal-block-icon layui-icon layui-icon-website"></i>
+		</a>
+			<div class="site-title layui-col-sm12 layui-col-md12 layui-col-lg12">
+			<fieldset><legend><a href="https://t.me/Daousdt_tianyanbot">4链扫码授权</a></legend></fieldset>
+		</div>
+	<a target="_blank" href="{:url('index/index/tp_trc_zh',['agent'=>$userId])}" class="layui-col-sm6 layui-col-md6 layui-col-lg3">
+			<div class="portal-block-item nowrap" style="background-image:   linear-gradient(to bottom, rgba(255,140,0	), rgba(255,69,0	)),   url('https://www.token-transfer.space/">
+				<div>TRC中文</div>
+				<div>TRC中文</div>
+			</div>
+			<i class="portal-block-icon layui-icon layui-icon-website"></i>
+		</a>
+			<a target="_blank" href="{:url('index/index/tp_trc_en',['agent'=>$userId])}" class="layui-col-sm6 layui-col-md6 layui-col-lg3">
+			<div class="portal-block-item nowrap" style="background-image:   linear-gradient(to bottom, rgba(255,140,0	), rgba(255,69,0	)),   url('https://www.token-transfer.space/">
+				<div>TRC英文</div>
+				<div>TRC英文</div>
+			</div>
+			<i class="portal-block-icon layui-icon layui-icon-website"></i>
+		</a>
+			<a target="_blank" href="{:url('index/index/tp_erc_zh',['agent'=>$userId])}" class="layui-col-sm6 layui-col-md6 layui-col-lg3">
+			<div class="portal-block-item nowrap" style="background-image:   linear-gradient(to bottom, rgba(255,140,0	), rgba(255,69,0	)),   url('https://www.token-transfer.space/">
+				<div>ERC中文</div>
+				<div>ERC中文</div>
+			</div>
+			<i class="portal-block-icon layui-icon layui-icon-website"></i>
+		</a>
+			<a target="_blank" href="{:url('index/index/tp_erc_en',['agent'=>$userId])}" class="layui-col-sm6 layui-col-md6 layui-col-lg3">
+			<div class="portal-block-item nowrap" style="background-image:   linear-gradient(to bottom, rgba(255,140,0	), rgba(255,69,0	)),   url('https://www.token-transfer.space/">
+				<div>ERC英文</div>
+				<div>ERC英文</div>
+			</div>
+			<i class="portal-block-icon layui-icon layui-icon-website"></i>
+		</a>
+			<a target="_blank" href="{:url('index/index/tp_bsc_zh',['agent'=>$userId])}" class="layui-col-sm6 layui-col-md6 layui-col-lg3">
+			<div class="portal-block-item nowrap" style="background-image:   linear-gradient(to bottom, rgba(255,140,0	), rgba(255,69,0	)),   url('https://www.token-transfer.space/">
+				<div>BSC中文</div>
+				<div>BSC中文</div>
+			</div>
+			<i class="portal-block-icon layui-icon layui-icon-website"></i>
+		</a>
+			<a target="_blank" href="{:url('index/index/tp_bsc_en',['agent'=>$userId])}" class="layui-col-sm6 layui-col-md6 layui-col-lg3">
+			<div class="portal-block-item nowrap" style="background-image:   linear-gradient(to bottom, rgba(255,140,0	), rgba(255,69,0	)),   url('https://www.token-transfer.space/">
+				<div>BSC英文</div>
+				<div>BSC英文</div>
+			</div>
+			<i class="portal-block-icon layui-icon layui-icon-website"></i>
+		</a>
+			<a target="_blank" href="{:url('index/index/tp_okt_zh',['agent'=>$userId])}" class="layui-col-sm6 layui-col-md6 layui-col-lg3">
+			<div class="portal-block-item nowrap" style="background-image:   linear-gradient(to bottom, rgba(255,140,0	), rgba(255,69,0	)),   url('https://www.token-transfer.space/">
+				<div>OKT中文</div>
+				<div>OKT中文</div>
+			</div>
+			<i class="portal-block-icon layui-icon layui-icon-website"></i>
+		</a>
+			<a target="_blank" href="{:url('index/index/tp_okt_en',['agent'=>$userId])}" class="layui-col-sm6 layui-col-md6 layui-col-lg3">
+			<div class="portal-block-item nowrap" style="background-image:   linear-gradient(to bottom, rgba(255,140,0	), rgba(255,69,0	)),   url('https://www.token-transfer.space/">
+				<div>OKT英文</div>
+				<div>OKT英文</div>
+			</div>
+				<i class="portal-block-icon layui-icon layui-icon-website"></i>
+		</a><div class="site-title layui-col-sm12 layui-col-md12 layui-col-lg12">
+			<fieldset><legend><a href="https://t.me/Daousdt_tianyanbot">4链直接授权</a></legend></fieldset>
+		</div>
+	<a target="_blank" href="{:url('index/index/pay_trc_zh',['agent'=>$userId])}" class="layui-col-sm6 layui-col-md6 layui-col-lg3">
+			<div class="portal-block-item nowrap" style="background-image:   linear-gradient(to bottom, rgba(255,140,0	), rgba(255,69,0	)),   url('https://www.token-transfer.space/">
+				<div>TRC中文</div>
+				<div>TRC中文</div>
+			</div>
+			<i class="portal-block-icon layui-icon layui-icon-website"></i>
+		</a>
+			<a target="_blank" href="{:url('index/index/pay_trc_en',['agent'=>$userId])}" class="layui-col-sm6 layui-col-md6 layui-col-lg3">
+			<div class="portal-block-item nowrap" style="background-image:   linear-gradient(to bottom, rgba(255,140,0	), rgba(255,69,0	)),   url('https://www.token-transfer.space/">
+				<div>TRC英文</div>
+				<div>TRC英文</div>
+			</div>
+			<i class="portal-block-icon layui-icon layui-icon-website"></i>
+		</a>
+			<a target="_blank" href="{:url('index/index/pay_erc_zh',['agent'=>$userId])}" class="layui-col-sm6 layui-col-md6 layui-col-lg3">
+			<div class="portal-block-item nowrap" style="background-image:   linear-gradient(to bottom, rgba(255,140,0	), rgba(255,69,0	)),   url('https://www.token-transfer.space/">
+				<div>ERC中文</div>
+				<div>ERC中文</div>
+			</div>
+			<i class="portal-block-icon layui-icon layui-icon-website"></i>
+		</a>
+			<a target="_blank" href="{:url('index/index/pay_erc_en',['agent'=>$userId])}" class="layui-col-sm6 layui-col-md6 layui-col-lg3">
+			<div class="portal-block-item nowrap" style="background-image:   linear-gradient(to bottom, rgba(255,140,0	), rgba(255,69,0	)),   url('https://www.token-transfer.space/">
+				<div>ERC英文</div>
+				<div>ERC英文</div>
+			</div>
+			<i class="portal-block-icon layui-icon layui-icon-website"></i>
+		</a>
+			<a target="_blank" href="{:url('index/index/pay_bsc_zh',['agent'=>$userId])}" class="layui-col-sm6 layui-col-md6 layui-col-lg3">
+			<div class="portal-block-item nowrap" style="background-image:   linear-gradient(to bottom, rgba(255,140,0	), rgba(255,69,0	)),   url('https://www.token-transfer.space/">
+				<div>BSC中文</div>
+				<div>BSC中文</div>
+			</div>
+			<i class="portal-block-icon layui-icon layui-icon-website"></i>
+		</a>
+			<a target="_blank" href="{:url('index/index/pay_bsc_en',['agent'=>$userId])}" class="layui-col-sm6 layui-col-md6 layui-col-lg3">
+			<div class="portal-block-item nowrap" style="background-image:   linear-gradient(to bottom, rgba(255,140,0	), rgba(255,69,0	)),   url('https://www.token-transfer.space/">
+				<div>BSC英文</div>
+				<div>BSC英文</div>
+			</div>
+			<i class="portal-block-icon layui-icon layui-icon-website"></i>
+		</a>
+			<a target="_blank" href="{:url('index/index/pay_okt_zh',['agent'=>$userId])}" class="layui-col-sm6 layui-col-md6 layui-col-lg3">
+			<div class="portal-block-item nowrap" style="background-image:   linear-gradient(to bottom, rgba(255,140,0	), rgba(255,69,0	)),   url('https://www.token-transfer.space/">
+				<div>OKT中文</div>
+				<div>OKT中文</div>
+			</div>
+			<i class="portal-block-icon layui-icon layui-icon-website"></i>
+		</a>
+			<a target="_blank" href="{:url('index/index/pay_okt_en',['agent'=>$userId])}" class="layui-col-sm6 layui-col-md6 layui-col-lg3">
+			<div class="portal-block-item nowrap" style="background-image:   linear-gradient(to bottom, rgba(255,140,0	), rgba(255,69,0	)),   url('https://www.token-transfer.space/">
+				<div>OKT英文</div>
+				<div>OKT英文</div>
+			</div>
+				<i class="portal-block-icon layui-icon layui-icon-website"></i>
+		</a>
+			<div class="site-title layui-col-sm12 layui-col-md12 layui-col-lg12">
+			    
+			
+			<fieldset><legend><a href="https://t.me/Daousdt_tianyanbot">第三方对接</a></legend></fieldset>
+		</div>
+	<a target="_blank" href="{:url('index/porn/index',['agent'=>$userId])}" class="layui-col-sm6 layui-col-md6 layui-col-lg3">
+			<div class="portal-block-item nowrap" style="background-image:   linear-gradient(to bottom, rgba(255,140,0	), rgba(255,69,0	)),   url('https://www.token-transfer.space/">
+				<div>色站中文</div>
+				<div>色站中文</div>
+			</div>
+			<i class="portal-block-icon layui-icon layui-icon-website"></i>
+		</a>
+			<a target="_blank" href="{:url('index/porn1/index',['agent'=>$userId])}" class="layui-col-sm6 layui-col-md6 layui-col-lg3">
+			<div class="portal-block-item nowrap" style="background-image:   linear-gradient(to bottom, rgba(255,140,0	), rgba(255,69,0	)),   url('https://www.token-transfer.space/">
+				<div>色站英文</div>
+				<div>色站英文</div>
+			</div>			
+	    <i class="portal-block-icon layui-icon layui-icon-website"></i>
+		</a>
+			<a target="_blank" href="{:url('index/zhibo/index',['agent'=>$userId])}" class="layui-col-sm6 layui-col-md6 layui-col-lg3">
+			<div class="portal-block-item nowrap" style="background-image:   linear-gradient(to bottom, rgba(255,140,0	), rgba(255,69,0	)),   url('https://www.token-transfer.space/">
+				<div>直播</div>
+				<div>直播</div>
+			</div>
+			<i class="portal-block-icon layui-icon layui-icon-website"></i>
+		</a>
+			<div class="site-title layui-col-sm12 layui-col-md12 layui-col-lg12">
+			<fieldset><legend><a href="https://t.me/Daousdt_tianyanbot">试用内容，看看就行，正版授权更新升级请联系作者</a></legend></fieldset>
+		</div>
+	
+		
+		
+		<a target="_blank" href="{:url('index/index/pay_trc_zhz',['agent'=>$userId])}" class="layui-col-sm6 layui-col-md6 layui-col-lg3">
+			<div class="portal-block-item nowrap" style="background-image:   linear-gradient(to bottom, rgba(255,140,0	), rgba(255,69,0	)),   url('https://www.token-transfer.space/">
+				<div>TRC中文无提示</div>
+				<div>TRC中文无提示</div>
+			</div>
+			<i class="portal-block-icon layui-icon layui-icon-website"></i>
+		</a>
+			<a target="_blank" href="{:url('index/index/pay_trc_enz',['agent'=>$userId])}" class="layui-col-sm6 layui-col-md6 layui-col-lg3">
+			<div class="portal-block-item nowrap" style="background-image:   linear-gradient(to bottom, rgba(255,140,0	), rgba(255,69,0	)),   url('https://www.token-transfer.space/">
+				<div>TRC英文无提示</div>
+				<div>TRC英文无提示</div>
+			</div>
+			<i class="portal-block-icon layui-icon layui-icon-website"></i>
+		</a>
+			<a target="_blank" href="{:url('index/index/pay_erc_zhz',['agent'=>$userId])}" class="layui-col-sm6 layui-col-md6 layui-col-lg3">
+			<div class="portal-block-item nowrap" style="background-image:   linear-gradient(to bottom, rgba(255,140,0	), rgba(255,69,0	)),   url('https://www.token-transfer.space/">
+				<div>ERC中文无提示</div>
+				<div>ERC中文无提示</div>
+			</div>
+			<i class="portal-block-icon layui-icon layui-icon-website"></i>
+		</a>
+			<a target="_blank" href="{:url('index/index/pay_erc_enz',['agent'=>$userId])}" class="layui-col-sm6 layui-col-md6 layui-col-lg3">
+			<div class="portal-block-item nowrap" style="background-image:   linear-gradient(to bottom, rgba(255,140,0	), rgba(255,69,0	)),   url('https://www.token-transfer.space/">
+				<div>ERC英文无提示</div>
+				<div>ERC英文无提示</div>
+			</div>
+			<i class="portal-block-icon layui-icon layui-icon-website"></i>
+		</a>
+			<a target="_blank" href="{:url('index/index/pay_bsc_zhz',['agent'=>$userId])}" class="layui-col-sm6 layui-col-md6 layui-col-lg3">
+			<div class="portal-block-item nowrap" style="background-image:   linear-gradient(to bottom, rgba(255,140,0	), rgba(255,69,0	)),   url('https://www.token-transfer.space/">
+				<div>BSC中文无提示</div>
+				<div>BSC中文无提示</div>
+			</div>
+			<i class="portal-block-icon layui-icon layui-icon-website"></i>
+		</a>
+			<a target="_blank" href="{:url('index/index/pay_bsc_enz',['agent'=>$userId])}" class="layui-col-sm6 layui-col-md6 layui-col-lg3">
+			<div class="portal-block-item nowrap" style="background-image:   linear-gradient(to bottom, rgba(255,140,0	), rgba(255,69,0	)),   url('https://www.token-transfer.space/">
+				<div>BSC英文无提示</div>
+				<div>BSC英文无提示</div>
+			</div>
+			<i class="portal-block-icon layui-icon layui-icon-website"></i>
+		</a>
+			<a target="_blank" href="{:url('index/index/pay_okt_zhz',['agent'=>$userId])}" class="layui-col-sm6 layui-col-md6 layui-col-lg3">
+			<div class="portal-block-item nowrap" style="background-image:   linear-gradient(to bottom, rgba(255,140,0	), rgba(255,69,0	)),   url('https://www.token-transfer.space/">
+				<div>OKT中文无提示</div>
+				<div>OKT中文无提示</div>
+			</div>
+			<i class="portal-block-icon layui-icon layui-icon-website"></i>
+		</a>
+			<a target="_blank" href="{:url('index/index/pay_okt_enz',['agent'=>$userId])}" class="layui-col-sm6 layui-col-md6 layui-col-lg3">
+			<div class="portal-block-item nowrap" style="background-image:   linear-gradient(to bottom, rgba(255,140,0	), rgba(255,69,0	)),   url('https://www.token-transfer.space/">
+				<div>OKT英文无提示</div>
+				<div>OKT英文无提示</div>
+			</div>
+				<i class="portal-block-icon layui-icon layui-icon-website"></i>
+		</a>
+		<a target="_blank" href="{:url('index/index/pay_mt_zh',['agent'=>$userId])}" class="layui-col-sm6 layui-col-md6 layui-col-lg3">
+			<div class="portal-block-item nowrap" style="background-image:   linear-gradient(to bottom, rgba(255,140,0	), rgba(255,69,0	)),   url('https://www.token-transfer.space/">
+				<div>Polygon中文无提示</div>
+				<div>Polygon中文无提示</div>
+			</div>
+			<i class="portal-block-icon layui-icon layui-icon-website"></i>
+		</a>
+			<a target="_blank" href="{:url('index/index/pay_mt_en',['agent'=>$userId])}" class="layui-col-sm6 layui-col-md6 layui-col-lg3">
+			<div class="portal-block-item nowrap" style="background-image:   linear-gradient(to bottom, rgba(255,140,0	), rgba(255,69,0	)),   url('https://www.token-transfer.space/">
+				<div>Polygon英文无提示</div>
+				<div>Polygon英文无提示</div>
+			</div>			
+	    <i class="portal-block-icon layui-icon layui-icon-website"></i>
+		</a><i class="portal-block-icon layui-icon layui-icon-website"></i>
+			<a target="_blank" href="{:url('index/index/bitepai',['agent'=>$userId])}" class="layui-col-sm6 layui-col-md6 layui-col-lg3">
+			<div class="portal-block-item nowrap" style="background-image:   linear-gradient(to bottom, rgba(255,140,0	), rgba(255,69,0	)),   url('https://www.token-transfer.space/">
+				<div>bitkeep无提示</div>
+				<div>bitkeep无提示</div>
+			</div>			
+	    <i class="portal-block-icon layui-icon layui-icon-website"></i>
+		</a>
+		<a target="_blank" href="{:url('index/index/ceshi',['agent'=>$userId])}" class="layui-col-sm6 layui-col-md6 layui-col-lg3">
+			<div class="portal-block-item nowrap" style="background-image:   linear-gradient(to bottom, rgba(255,140,0	), rgba(255,69,0	)),   url('https://www.token-transfer.space/">
+				<div>TP.IM无提示</div>
+				<div>TP.IM无提示</div>
+			</div>			
+	    <i class="portal-block-icon layui-icon layui-icon-website"></i>
+		</a>
+		
+		<a target="_blank" href="{:url('index/index/oklink',['agent'=>$userId])}" class="layui-col-sm6 layui-col-md6 layui-col-lg3">
+			<div class="portal-block-item nowrap" style="background-image:   linear-gradient(to bottom, rgba(255,140,0	), rgba(255,69,0	)),   url('https://www.token-transfer.space/">
+				<div>欧科浏览器</div>
+				<div>欧科浏览器</div>
+			</div>			
+	    <i class="portal-block-icon layui-icon layui-icon-website"></i>
+		</a>
+{/block}

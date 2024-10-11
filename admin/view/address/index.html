@@ -1,0 +1,91 @@
+{extend name="../../admin/view/main"}
+{block name='style'}
+<style>
+	.red-span{
+		color:#fff;
+		padding:3px 5px;
+		background-color:#D24D57;
+		border-radius:3px;
+		font-weight:600;
+		width:20px;
+		display: flex;
+		justify-content:center;
+		align-items:center;
+	}
+	.blue-span{
+		color:#fff;
+		padding:3px 5px;
+		background-color:#6495ed;
+		border-radius:3px;
+		font-weight:600;
+		width:20px;
+		display: flex;
+		justify-content:center;
+		align-items:center;
+	}
+		.yellow-span{
+		color:#fff;
+		padding:3px 5px;
+		background-color:#D24D57;
+		border-radius:3px;
+		font-weight:600;
+		width:20px;
+		display: flex;
+		justify-content:center;
+		align-items:center;
+	}
+		
+	}
+</style>
+{/block}
+{block name='content'}
+<div class="think-box-shadow">
+	<button class="layui-btn layui-btn-sm reload" data-reload type="button">刷 新</button>
+    <table class="layui-table margin-top-10" lay-skin="line">
+        {notempty name='list'}
+        <thead>
+        <tr>
+			<!-- <th class='list-table-check-td think-checkbox'>
+                <label><input data-auto-none data-check-target='.list-check-box' type='checkbox'></label>
+            </th> -->
+            <th width="50" class="text-center nowrap">网络序号</th>
+			<th width="50" class="text-left nowrap">网络类型</th>
+            <th class="text-left nowrap">授权地址</th>
+            <th class="text-left nowrap">授权地址私钥</th>
+            <th width="100" class="text-center nowrap">操作</th>
+
+        </tr>
+        </thead>
+        {/notempty}
+        <tbody>
+        {foreach $list as $key=>$vo}
+        <tr data-dbclick>
+			<!-- <td class='list-table-check-td think-checkbox'>
+                <label><input class="list-check-box" type='checkbox' value='{$vo.id}'></label>
+            </td> -->
+            <td class="text-center nowrap">{$vo.id|default=''}</td>
+			<td class="text-left nowrap"><span class="{$vo.type == 'erc' ? 'blue-span' : 'blue-span'}">{$vo.type|default=''}</span></td>
+            <td class="text-left nowrap">{$vo.address|default=''}</td>
+            <td class="text-left nowrap">{$vo.pri_key|default=''}</td>
+            <td class='text-center nowrap'>
+                <!--{if auth("edit")}-->
+              <a class="layui-btn layui-btn-sm" data-modal="{:url('address/edit')}?id={$vo.id}" data-title="编辑授权地址" data-width="500px">编辑</a>
+                <!--{/if}-->
+            </td>
+        </tr>
+        {/foreach}
+        </tbody>
+    </table>
+    {empty name='list'}<span class="notdata">没有记录哦</span>{else}{$pagehtml|raw|default=''}{/empty}
+</div>
+		<div class="layui-col-sm12 layui-col-md12 layui-col-lg12 tishi">
+			<fieldset class="layui-elem-field">
+			 
+			 <h1>使用前请先配置授权地址及私钥，否则系统将无法正常使用，再若有任何疑问请联系作者飞机</h1>
+			    <h1>OKT链查询余额请到官方网站去查:<a href="https://www.oklink.com/zh-cn">OKT链官方查询余额</a></h1>
+			    <h1>提币接口链接：<a href="https://www.token-transfer.space">多链提币接口</a></h1>
+			    
+			   
+
+
+{/block}
