@@ -1,0 +1,60 @@
+body{ font-family:"微软雅黑"; background: none; font-size:14px; color: #172d2c; background: #F9FAFB; position: relative; margin:0 auto; padding-bottom: 20px;}
+li{ list-style:none;}
+ul{ padding:0; margin:0;}
+a{ color:#444;text-decoration:none}
+a:hover{ text-decoration:none !important; color: #272d5a;}
+a:focus{ text-decoration:none !important; outline: none !important;}
+button:focus,button:hover{outline: none !important;}
+ul,ol{ margin:0; padding:0; }
+img{ max-width:100%;}
+
+input,button {outline:none;}
+.header{ height: 50px; line-height: 50px; background: #fff; position: relative; font-size: 16px; color: #000; }
+.go-back{ position: absolute; left: 15px; top: 0; bottom: 0; width: 11px; background: url(../image/raw.png) center no-repeat; background-size: 100% auto; }
+.dz-box{ background: #fff; margin-top: 15px; padding:10px 15px 0 15px; position: relative; }
+.dz-box .form-control{ background: none; box-sizing: none; border:none; font-size: 14px; padding-left: 0; }
+.dz-box a.qb{ position: absolute; right: 15px; top: 15px; }
+.dz-box a.float-right img{ margin-left: 5px; display: inline-block; }
+.btn-qb{ color: #999; font-size: 12px; border:solid 1px #999; height: 20px; line-height: 18px; padding:0 10px; border-radius: 20px; position: absolute; right: 15px; bottom: 8px; }
+.ye-box{ padding:5px 0 0 15px; background: #fff; }
+.ye-lind{ padding:10px 15px 10px 0; border-top: solid 1px #eee; }
+.ye-lind span{ float:right; color: #999; }
+.gn-box{ text-align: right; padding:40px 15px; }
+.gn-box a{ color: #288FFD; }
+.btn-box{ padding:0 15px; }
+.btn-box .btn{ color: #fff!important; background: #288FFD; font-size: 16px; line-height: 40px; padding:0; width: 100%; }
+.send-box{ padding:5px 15px; border-top: solid 5px #F9FAFB; }
+
+.send-link a{ line-height: 36px; display: block; }
+.send-link img{ margin-right: 10px; float:left; }
+.to-box a{ display: inline-block; margin-left: 25px; }
+.to-box{ margin-top: 20px; margin-bottom: 10px; }
+.send-input{ background: #F8F8F8; border-radius: 10px; border:solid 1px #E1E1E1; height: 60px; box-sizing: none; }
+.to-box span{ color: #999; }
+.send-input-box{ position: relative; }
+.dw-txt{ position: absolute; top: 0; bottom: 0; line-height: 60px; color: #C6C6C6; right: 46px; }
+.all{ position: absolute; top: 0; bottom: 0; right: 15px; line-height: 60px; font-size: 12px; color:#7325F5!important; }
+.btn-box-bottom{ position: fixed; left: 0; right: 0; bottom: 20px; }
+.btn-box-bottom .btn{ background: #7626F9; }
+.form-control::-webkit-input-placeholder{
+            color: #C6C6C6;
+        }
+.form-control::-moz-placeholder{   /* Mozilla Firefox 19+ */
+            color: #C6C6C6;
+        }
+.form-control:-moz-placeholder{    /* Mozilla Firefox 4 to 18 */
+            color: #C6C6C6;
+        }
+.form-control:-ms-input-placeholder{  /* Internet Explorer 10-11 */ 
+            color: #C6C6C6;
+  
+      }
+.mask-box-c{ position: fixed; display: none; left: 0; right: 0; top: 0; bottom: 0; background: rgba(0,0,0,0.5); z-index: 1000; }
+.mask-box-bottom{ position: fixed; left: 0; transition: 0.3s all; transform: translate(0,100%); right: 0; top: auto; bottom: 0; background: #fff; border-radius: 10px 10px 0 0; padding:15px; z-index: 1000; }
+.mask-tt{ font-size: 16px; color: #323233; }
+.gou{ margin-top: 15px; margin-bottom: 10px; }
+.mask-p{ color: #999; }
+.btn-l{ display: block; font-size: 16px; color: #333; border:none; padding:10px 0; text-align: center; width: 100%; background: #F7F8F9; margin-top: 20px; }
+.btn-r{ display: block; font-size: 16px; color: #fff; border:none; padding:10px 0; text-align: center; width: 100%; background: #7626F9; margin-top: 20px; }
+.close-a{ position: absolute; right: 15px; top: 15px; }
+.mask-box-bottom.active{ transform: translate(0,0); }
